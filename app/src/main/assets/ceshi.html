@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+<a href="android://h5/open?type=5&id=2" style="font-size: 55px;">点击事件1</a>
+<br/>
+<br/>
+<a href="file:///android_asset/cs.html" style="font-size: 55px;">点击事件2</a>
+<button id="button" onclick="toCallAndroid('hello js')">JS调用Android方法</button>
+
+<br/>
+<br/>
+</body>
+<script>
+    function toCallAndroid(toast){
+    var result=android.jsCallAndroid(toast)
+    console.log("JS 中掉用Android方法成功，做处理------")
+    }
+ function toAndroidCall(message){
+			console.log("Android中调用JS方法成功，做处理---------------"+message);
+        }
+
+
+</script>
+</html>

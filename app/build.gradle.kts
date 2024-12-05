@@ -50,4 +50,6 @@ dependencies {
     implementation ("io.reactivex.rxjava3:rxjava:3.1.8")
     //rxandroid 用于rxjava进行线程调度
     implementation ("io.reactivex.rxjava3:rxandroid:3.0.2")
+
+    implementation("org.greenrobot:eventbus:3.3.1")
 }

@@ -6,16 +6,7 @@ package com.zm.face01.test
  * @Description:
 
  */
-class Student {
-    private var name = ""
-    private var age = 0
-    private var score = 0
-
-    constructor(name: String, age: Int, score: Int) {
-        this.name = name
-        this.age = age
-        this.score = score
-    }
+class Student(var name: String, var age: Int, var score: Int, var list: List<Course>) {
 
     override fun equals(other: Any?): Boolean {
         if (other is Student) {
@@ -29,4 +20,10 @@ class Student {
         return 1000
     }
 
+}
+
+class Course(var name: String) {
+    override fun toString(): String {
+        return name
+    }
 }

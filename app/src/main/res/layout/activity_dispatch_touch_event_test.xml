@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zm.face01.test.MyViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DispatchTouchEventTestActivity">
+
+
+    <com.zm.face01.test.MyView
+        android:id="@+id/myview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/design_default_color_error"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_test" />
+</com.zm.face01.test.MyViewGroup>

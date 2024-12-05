@@ -67,6 +67,9 @@ class TransOperatorDemo {
             }
         }).subscribe(observer);
 
+
+        observable.buffer(3).subscribe(observer);
+
     }
 
 }
