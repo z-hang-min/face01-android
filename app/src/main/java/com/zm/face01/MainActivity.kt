@@ -41,9 +41,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-//        val student01 = Student("piter", 10, 100)
-//        val student02 = Student("piter", 10, 90)
-//        Log.e("test", "${student01 == student02}")
+        val student01 = Student("piter", 10, 100)
+        val student02 = Student("piter", 10, 90)
+        Log.e("test", "${student01 == student02}")
         //thread 的实现方式 runnable 继承Thread
 
         val thread = TestThread()
