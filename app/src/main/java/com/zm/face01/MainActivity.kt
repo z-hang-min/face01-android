@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         val student01 = Student("piter", 10, 100)
         val student02 = Student("piter", 10, 90)
         //main test
-        Log.e("test", "${student01 == student02}")
+//        Log.e("test", "${student01 == student02}")//
         thread 的实现方式 runnable 继承Thread
 
         val thread = TestThread()
