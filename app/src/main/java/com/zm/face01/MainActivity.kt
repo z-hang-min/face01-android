@@ -46,12 +46,12 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         Log.e("test", "${student01 == student02}")
         //thread 的实现方式 runnable 继承Thread
 
-//        val thread = TestThread()
-//        Log.e("test", "${thread.name}")
-//        thread.start()
-//        val thread2 = Thread {
-//            Log.e("test", "i am implentes Runnable")
-//        }
+        val thread = TestThread()
+        Log.e("test", "${thread.name}")
+        thread.start()
+        val thread2 = Thread {
+            Log.e("test", "i am implentes Runnable")
+        }
         with(binding) {
 
             val manager = GridLayoutManager(this@MainActivity, 3)
